@@ -1,7 +1,7 @@
 <template>
     <a href="#" class="btn btn-white btn-animated">Discover our tools</a>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
