@@ -1,7 +1,9 @@
-@import '/src/assets/styles/base/base';
-@import '/src/assets/styles/base/animations';
-@import '/src/assets/styles/base/typography';
-@import '/src/assets/styles/components/button';
-@import '/src/assets/styles/layout/header';
+@use '/src/assets/styles/base/base';
+@use '/src/assets/styles/base/animations';
+@use '/src/assets/styles/base/typography';
+@use '/src/assets/styles/components/button';
+@use '/src/assets/styles/layout/header';
+@use './assets/styles/base/utility';
+@use './assets/styles/layout/grid';
 
 
