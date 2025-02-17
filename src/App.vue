@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BaseInfo from './components/BaseInfo.vue';
+import FeatureSection from './components/FeatureSection.vue';
 import Default from './layouts/default.vue';
 
 </script>
@@ -8,6 +9,7 @@ import Default from './layouts/default.vue';
     <Default>
         <main>
             <BaseInfo />
+            <FeatureSection />
         </main>
     </Default>
 </template>
