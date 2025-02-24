@@ -1,0 +1,80 @@
+@use '../abstracts/variables' as *;
+.story {
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgba($color-white, .4);
+    padding: 3rem;
+    border-radius: 3px;
+    box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+    text-align: start;
+    font-size: $default-font-size;
+    padding-left: 9rem;
+    margin-bottom: 6rem;
+    transform: skewX(-12deg);
+
+    &__shape {
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        fill: $color-primary;
+        float: left;
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skew(12deg);
+        
+    }
+
+    &__img {
+        height: 100%;
+        border-radius: 3px;
+        margin-bottom: 2rem;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        transform: scale(1.4) translateX(-4rem);
+        transition: transform .2s ;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__text {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        transform: skewX(12deg);
+    }
+    &__picture {
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-white;
+        font-size: 1.7rem;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+    &__heading {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    &:hover &__caption {
+        opacity: 1;
+        transform: translateY(-50%, -50%) scale(1.5);
+    }
+    &:hover &__img {
+        transform: scale(1) translateX(-4rem);
+        filter: blur(3px);
+    }
+}
